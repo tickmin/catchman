@@ -1,4 +1,10 @@
 from flask import Flask, jsonify
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "bs4"])
+
 from bs4 import BeautifulSoup
 import requests
 
