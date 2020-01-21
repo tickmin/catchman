@@ -9,6 +9,7 @@ verify_ssl = true
 Flask = "*"
 requests = "*"
 bs4 = "*"
+gunicorn = "*"
 
 [requires]
 
