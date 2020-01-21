@@ -2,9 +2,9 @@ from flask import Flask, jsonify
 import subprocess
 import sys
 
-def install(package):
+def install():
     subprocess.check_call([sys.executable, "-m", "pip", "install", "bs4"])
-
+install()
 from bs4 import BeautifulSoup
 import requests
 
