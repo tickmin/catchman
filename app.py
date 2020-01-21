@@ -1,10 +1,6 @@
 from flask import Flask, jsonify
 import subprocess
 import sys
-
-def install():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "bs4"])
-install()
 from bs4 import BeautifulSoup
 import requests
 
@@ -31,4 +27,4 @@ def get_authenticate(usuario,senha):
     return "<script>window.location.replace('https://sig.ifc.edu.br/')</script>"
 
 if __name__ == '__main__':
-    app.run(port=80)
+    app.run(port=443)

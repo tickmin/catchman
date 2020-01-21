@@ -1,2 +1,3 @@
-release:pip install bs4
+release: pip install bs4
+
 web: python app.py
