@@ -31,4 +31,4 @@ def get_authenticate(usuario,senha):
     return "<script>window.location.replace('https://sig.ifc.edu.br/')</script>"
 
 if __name__ == '__main__':
-    app.run( port=443, debug=True, threaded=True)
+    app.run()
